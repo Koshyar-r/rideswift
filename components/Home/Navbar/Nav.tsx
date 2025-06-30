@@ -3,7 +3,7 @@ import { navLinks } from '@/constants/constants'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
-import { TbAirBalloon, TbCar } from 'react-icons/tb'
+import { TbCar } from 'react-icons/tb'
 
 type Props = {
     openNav: () => void
@@ -46,8 +46,8 @@ const Nav = ({openNav}:Props) => {
                 </div>
                 {/* BUTTONS */}
                 <div className="flex items-center space-x-4">
-                    <button className="md:px-12 md:py-2.5 px-8 py-2 text-black text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
-                        Book Now
+                    <button className="sm:px-10 sm:py-2.5 px-2 py-2 text-black text-[10px] sm:text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
+                        Rent Now
                     </button>
                     {/* HAMBURGER MENU */}
                     <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden' />
